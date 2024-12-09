@@ -1,7 +1,7 @@
 import axios from 'axios';
 <<<<<<< HEAD
 
-const API_URL = 'http://localhost:8080/api/usuarios';
+const API_URL = 'https://72566922.github.io/real-cartelera/api/usuarios';
 =======
 import { urlServer } from "./urlServer.js";
 

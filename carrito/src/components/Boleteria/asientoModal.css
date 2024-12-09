@@ -1,0 +1,97 @@
+/* asientoModal.css */
+<<<<<<< HEAD
+=======
+.aea{
+    background-image:url('/build/pantalla.png');
+    background-size: cover;   /* La imagen cubrirá todo el fondo */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.modal-title{
+    color: rgb(1, 28, 63);
+    background-color: rgba(255, 255, 255, 0.336);
+}
+
+>>>>>>> 577ae14 (casi listo)
+.asiento {
+    width: 30px; /* Aumentar el ancho del asiento */
+    height: 30px; /* Aumentar el alto del asiento */
+    border-radius: 50%; /* Forma circular */
+<<<<<<< HEAD
+    background-color: #28a745; /* Color de asiento disponible */
+=======
+    background-color: #fcfffd; /* Color de asiento disponible */
+>>>>>>> 577ae14 (casi listo)
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0; /* Espacio entre asientos */
+    color: white; /* Color del texto */
+    font-size: 0.8rem; /* Ajustar tamaño de la fuente si es necesario */
+}
+
+.asiento-bloqueado {
+    background-color: red; /* Color para asientos bloqueados */
+    color: white; /* Color del texto en asientos bloqueados */
+    text-decoration: line-through; /* Texto tachado */
+    cursor: not-allowed; /* Cambia el cursor cuando el asiento está bloqueado */
+}
+
+.asiento-seleccionado {
+<<<<<<< HEAD
+    background-color: #007bff; /* Color para asientos seleccionados */
+=======
+    background-color: #11427e; /* Color para asientos seleccionados */
+>>>>>>> 577ae14 (casi listo)
+    transform: scale(1.1); /* Efecto de aumento al seleccionar */
+}
+
+.asiento-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columnas */
+    grid-template-rows: repeat(7, 1fr); /* 7 filas */
+    gap: 5px; /* Espacio entre los asientos */
+}
+
+.modal-dialog {
+    max-width: 900px; /* Ancho máximo del modal */
+    width: 100%; /* Permitir que el modal use el ancho completo */
+}
+
+.modal-body {
+<<<<<<< HEAD
+=======
+    background-color: rgba(34, 194, 34, 0.308);
+>>>>>>> 577ae14 (casi listo)
+    max-height: 70vh; /* Limitar la altura del modal para que no ocupe toda la pantalla */
+    overflow-y: auto; /* Habilitar desplazamiento si el contenido es demasiado grande */
+}
+
+<<<<<<< HEAD
+@media (max-width: 576px) {
+    .asiento-grid {
+        grid-template-columns: repeat(7, 1fr); /* 10 columnas */
+        grid-template-rows: repeat(10, 1fr); /* 7 filas */
+        gap: 5px; /* Espacio entre los asientos */
+    }
+  
+=======
+.modal-header img {
+    width: 100%;  /* Ajusta al ancho del contenedor */
+    max-height: 150px;  /* Limita la altura máxima */
+    object-fit: contain; /* Mantiene la proporción */
+    margin-bottom: 10px; /* Agrega un margen inferior */
+}
+
+
+@media (max-width: 576px) {
+    .asiento-grid {
+        grid-template-columns: repeat(10, 1fr); /* 10 columnas */
+        grid-template-rows: repeat(7, 1fr); /* 7 filas */
+        gap: 2px; /* Espacio entre los asientos */
+    }
+>>>>>>> 577ae14 (casi listo)
+  }

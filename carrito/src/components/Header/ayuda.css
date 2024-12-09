@@ -1,0 +1,82 @@
+/* ayuda.css */
+
+/* Contenedor principal */
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo de las tarjetas */
+.ayuda-card {
+  width: 100%;
+  max-width: 600px; /* Limitar el ancho máximo para no estirar demasiado en pantallas grandes */
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la alerta */
+.ayuda-alert {
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Estilo de la fila para el contacto y otras secciones */
+.ayuda-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el botón de WhatsApp */
+.ayuda-btn-success {
+  background-color: #25d366;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ayuda-btn-success:hover {
+  background-color: #128c7e;
+}
+
+/* Estilo del icono de WhatsApp */
+.ayuda-me-2 {
+  margin-right: 10px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+  .ayuda-col-12 {
+    padding: 10px 15px;
+  }
+
+  .ayuda-card {
+    padding: 20px;
+  }
+
+  h3, h5 {
+    font-size: 18px;
+  }
+
+  .ayuda-alert {
+    font-size: 12px;
+  }
+
+  .ayuda-btn-lg {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+small {
+  font-size: 12px;
+  color: #666;
+}
